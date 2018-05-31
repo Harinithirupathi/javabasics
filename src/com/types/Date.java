@@ -1,12 +1,14 @@
 package com.types;
 
 public class Date {
-int day;
-int year;
-int month;
-public void data(int day,int year,int month) {
+static int day;
+static int year;
+static int month;
+	
+
+public Date(int day,int year,int month) {
 	this.day=day;
-	this.year=month;
+	this.year=year;
 	this.month=month;
 	
 }
@@ -29,7 +31,16 @@ public void setMonth(int month) {
 	this.month = month;
 }
 
-public void displayDate() {
-	System.out.println(day+"/"+month+"/"+year);
-}
-}
+	
+
+
+public static void main(String[] args) {
+Date d1=new Date(day,month,year);
+d1.setDay(31);
+d1.setMonth(5);
+d1.setYear(2018);
+
+
+System.out.println(day+"/"+month+"/"+year);
+
+}}
