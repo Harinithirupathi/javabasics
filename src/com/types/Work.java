@@ -1,38 +1,48 @@
 package com.types;
 class Employee{
-	String Firstname;
+	String firstname;
 	String lastName;
 	double monthlySalary;
 	Employee(){
 		
 	}
+	
 	public String getFirstname() {
-		return Firstname;
+		return firstname;
 	}
+
 	public void setFirstname(String firstname) {
-		Firstname = firstname;
+		this.firstname = firstname;
 	}
+
 	public String getLastName() {
 		return lastName;
 	}
+
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
+
 	public double getMonthlySalary() {
-		return monthlySalary;
+		return monthlySalary*12;
 	}
+
 	public void setMonthlySalary(double monthlySalary) {
 		this.monthlySalary = monthlySalary;
 	}
-
 }
-public class Work {
+	public class Work {
 public static void main(String[] args) {
 	Employee e1=new Employee();
 	e1.setFirstname("Harini");
 	e1.setLastName("thirupathi");
-	e1.setMonthlySalary(45000);
+	int n=45000;
+			if(n>0)
+			{
+	        e1.setMonthlySalary(n);
+			}
 	Employee e2=new Employee();
+			
 	e2.setFirstname("suurya");
 	e2.setLastName("senthil kumar");
 	e2.setMonthlySalary(55000);
