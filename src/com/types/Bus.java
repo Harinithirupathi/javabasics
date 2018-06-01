@@ -34,6 +34,7 @@ public class Bus {
 	  public void changeInt(int i) {
 		  i=i+10;  
 	  }
+	  
 	public static void main(String[]args) {
 	Bus bus1=new Bus();
 	Bus bus2=new Bus();
@@ -45,6 +46,7 @@ public class Bus {
 	int race=100;
 	bus1.changeInt(race);
 	System.out.println(race);
+	
 	}
 }
 
